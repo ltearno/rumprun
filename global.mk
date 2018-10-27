@@ -13,7 +13,7 @@ CXXFLAGS+= -fno-stack-protector -ffreestanding
 
 CFLAGS+= -Wall -Wimplicit -Wmissing-prototypes -Wstrict-prototypes
 ifndef NOGCCERROR
-CFLAGS+= -Werror
+CFLAGS+= -Werror -Wno-error=shift-negative-value
 endif
 
 LDFLAGS.x86_64.hw= -z max-page-size=0x1000

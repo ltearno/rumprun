@@ -3,7 +3,7 @@ include ${RUMPRUN_MKCONF}
 CC= ${RUMPRUN_CC}
 CXX= ${RUMPRUN_CXX}
 
-CFLAGS+= -Wall -Werror -Wmissing-prototypes -Wstrict-prototypes -g
+CFLAGS+= -Wall -Werror -Wno-error=shift-negative-value -Wmissing-prototypes -Wstrict-prototypes -g
 LDLIBS= -lrumprun_tester
 
 %:: %.c

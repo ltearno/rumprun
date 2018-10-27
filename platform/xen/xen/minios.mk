@@ -6,7 +6,7 @@ debug = y
 
 # Define some default flags.
 # NB. '-Wcast-qual' is nasty, so I omitted it.
-DEF_CFLAGS += -fno-builtin -Wall -Werror -Wredundant-decls -Wno-format -Wno-redundant-decls
+DEF_CFLAGS += -fno-builtin -Wall -Werror -Wno-error=shift-negative-value -Wredundant-decls -Wno-format -Wno-redundant-decls
 DEF_CFLAGS-$(call cc-option,-fno-stack-protector) += -fno-stack-protector
 DEF_CFLAGS-$(call cc-option,-fgnu89-inline) += -fgnu89-inline
 DEF_CFLAGS += $(DEF_CFLAGS-y)

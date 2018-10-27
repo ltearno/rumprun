@@ -8,7 +8,7 @@ AC_CONFIG_MACRO_DIR([m4])
 
 AC_CANONICAL_TARGET
 
-AM_INIT_AUTOMAKE([1.11 foreign subdir-objects -Wall -Werror])
+AM_INIT_AUTOMAKE([1.11 foreign subdir-objects -Wall -Werror -Wno-error=shift-negative-value])
 AM_MAINTAINER_MODE
 
 AC_PROG_CC

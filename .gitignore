@@ -1,2 +1,5 @@
 *~
 *.o
+obj-amd64-hw/
+myobj/
+rumprun/
